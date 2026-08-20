@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MorningMug — Coffee Ordering Website
 
 A full-stack coffee ordering web application built with plain HTML, CSS, Vanilla JavaScript, PHP, and MySQL. Developed as part of the DecodeLabs Full Stack Development internship projects.
@@ -79,3 +80,7 @@ DecodeLabs Full Stack Development Internship
 ## License
 
 This project is for educational purposes as part of the DecodeLabs internship program.
+=======
+# DecodeLabs-Internship
+Full-stack web development internship
+>>>>>>> 98ae12b3d05dbf595d6115ba6516de4d50dc839e
