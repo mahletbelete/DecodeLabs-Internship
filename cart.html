@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart — MorningMug</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar section-content">
+      <a href="index.html" class="nav-logo">
+        <i class="fa-solid fa-mug-hot logo-icon"></i>
+        <h2 class="logo-text">Morning<span>Mug</span></h2>
+      </a>
+      <ul class="nav-menu">
+        <button id="menu-close-button" class="fas fa-times"></button>
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <button id="menu-open-button" class="fas fa-bars"></button>
+      <div class="nav-buttons">
+        <a href="menu.html" class="search-btn">
+          <i class="fa-solid fa-magnifying-glass button-icon"></i>
+        </a>
+        <a href="login.html" class="account-btn">
+          <i class="fa-solid fa-user button-icon"></i>
+        </a>
+        <a href="cart.html" class="cart-btn">
+          <i class="fa-solid fa-cart-shopping button-icon"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart-section page-top-padding">
+      <div class="section-content">
+        <h2 class="section-title">Your Cart</h2>
+
+        <div class="cart-layout">
+          <!-- Cart items list -->
+          <div class="cart-items" id="cart-items">
+            <p class="empty-cart-text">Your cart is empty. <a href="menu.html">Browse the menu</a></p>
+          </div>
+
+          <!-- Order summary -->
+          <div class="cart-summary" id="cart-summary">
+            <h3 class="summary-title">Order Summary</h3>
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <span id="summary-subtotal">$0.00</span>
+            </div>
+            <div class="summary-row summary-total">
+              <span>Total</span>
+              <span id="summary-total">$0.00</span>
+            </div>
+            <button class="place-order-btn" id="place-order-btn">Place Order</button>
+            <p class="order-message" id="order-message"></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; 2026 MorningMug. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+
+</html>

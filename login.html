@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — MorningMug</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar section-content">
+      <a href="index.html" class="nav-logo">
+        <i class="fa-solid fa-mug-hot logo-icon"></i>
+        <h2 class="logo-text">Morning<span>Mug</span></h2>
+      </a>
+      <ul class="nav-menu">
+        <button id="menu-close-button" class="fas fa-times"></button>
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <button id="menu-open-button" class="fas fa-bars"></button>
+      <div class="nav-buttons">
+        <a href="menu.html" class="search-btn">
+          <i class="fa-solid fa-magnifying-glass button-icon"></i>
+        </a>
+        <a href="login.html" class="account-btn">
+          <i class="fa-solid fa-user button-icon"></i>
+        </a>
+        <a href="cart.html" class="cart-btn">
+          <i class="fa-solid fa-cart-shopping button-icon"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="auth-section page-top-padding">
+      <div class="section-content">
+        <div class="auth-card">
+          <h2 class="auth-title">Welcome Back</h2>
+          <p class="auth-subtitle">Sign in to your MorningMug account</p>
+
+          <form class="auth-form" id="login-form" novalidate>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              <span class="field-error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Your password" required>
+              <span class="field-error" id="password-error"></span>
+            </div>
+            <p class="form-message" id="form-message"></p>
+            <button type="submit" class="auth-submit-btn">Sign In</button>
+          </form>
+
+          <p class="auth-switch">Don't have an account? <a href="register.html">Register here</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; 2026 MorningMug. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+
+</html>

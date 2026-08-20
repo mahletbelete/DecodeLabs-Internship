@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — MorningMug</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar section-content">
+      <a href="index.html" class="nav-logo">
+        <i class="fa-solid fa-mug-hot logo-icon"></i>
+        <h2 class="logo-text">Morning<span>Mug</span></h2>
+      </a>
+      <ul class="nav-menu">
+        <button id="menu-close-button" class="fas fa-times"></button>
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+      <button id="menu-open-button" class="fas fa-bars"></button>
+      <div class="nav-buttons">
+        <a href="menu.html" class="search-btn">
+          <i class="fa-solid fa-magnifying-glass button-icon"></i>
+        </a>
+        <a href="login.html" class="account-btn">
+          <i class="fa-solid fa-user button-icon"></i>
+        </a>
+        <a href="cart.html" class="cart-btn">
+          <i class="fa-solid fa-cart-shopping button-icon"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section page-top-padding">
+      <div class="section-content">
+        <h2 class="section-title">Contact Us</h2>
+
+        <div class="contact-layout">
+          <!-- Contact info -->
+          <div class="contact-info">
+            <h3 class="contact-info-title">Get in Touch</h3>
+            <p class="contact-info-text">We'd love to hear from you. Stop by or send us a message.</p>
+            <ul class="contact-details">
+              <li><i class="fa-solid fa-location-dot"></i> 123 Brew Street, Coffee Town</li>
+              <li><i class="fa-solid fa-phone"></i> +1 (555) 012-3456</li>
+              <li><i class="fa-solid fa-envelope"></i> hello@morningmug.com</li>
+              <li><i class="fa-solid fa-clock"></i> Mon–Fri: 7am – 8pm &nbsp;|&nbsp; Sat–Sun: 8am – 6pm</li>
+            </ul>
+            <div class="social-link-list">
+              <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+              <span class="field-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              <span class="field-error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+              <span class="field-error" id="message-error"></span>
+            </div>
+            <p class="form-message" id="form-message"></p>
+            <button type="submit" class="auth-submit-btn">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; 2026 MorningMug. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+
+</html>
