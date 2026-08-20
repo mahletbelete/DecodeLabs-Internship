@@ -83,4 +83,3 @@ This project is for educational purposes as part of the DecodeLabs internship pr
 =======
 # DecodeLabs-Internship
 Full-stack web development internship
->>>>>>> 98ae12b3d05dbf595d6115ba6516de4d50dc839e
